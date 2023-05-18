@@ -1,4 +1,8 @@
 
+# 6 - pionki czarnego
+# 9 - pionki białego
+# 7 - damka czarnego
+# 8 - damka białego
 
 class Board:
     def __init__(self):
@@ -12,6 +16,18 @@ class Board:
             self._board[0][x] = 6
             self._board[2][x] = 6
             self._board[6][x] = 9
+
+    def get_move(self, x, y):
+        pass
+
+    def get_moves_for_player(self,x,y, player): #player 1 - biały, 0 czarny
+        pass
+
+    def copy(self):
+        pass
+
+    def board_to_tensor(self):
+        pass
 
     def __str__(self):
         strin = ""
